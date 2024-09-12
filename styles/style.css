@@ -28,4 +28,24 @@
 /****************/
 
 /* jouw code */
+@font-face {
+	font-family: 'gothamssm_medium';
+	src:  url('../fonts/gothamssm_medium.woff2') format('woff2'),
+}
+
+@font-face {
+	font-family: 'gothamssm_bold';
+	src:  url('../fonts/gothamssm_bold.woff2') format('woff2'),
+}
+
+@font-face {
+	font-family: 'gothamssm_light';
+	src:  url('../fonts/gothamssm_light.woff2') format('woff2'),
+}
+
+header p {
+	font-family: 'gothamssm_light';
+	background-color: rgb(138, 1, 252);
+	color: white;
+}
 
