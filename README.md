@@ -22,7 +22,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   tussen blauw en rood (kies uit zwart, rood óf blauw)
 
   #### Je focus:
-  hier je focus (kies uit responsive óf surface plane)
+  surface plane (kies uit responsive óf surface plane)
  
 </details>
 
@@ -40,11 +40,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home scherm  
-  <img src="readme-images/home.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/home.png" width="375px" alt="home scherm">
 
   #### Screenshot(s) van de tweede pagina (small screen):
   PC kopen  
-  <img src="readme-images/pc.png" width="375px" alt="omschrijving van de pagina">
+  <img src="readme-images/pc.png" width="375px" alt="het personaliseren van een pc">
  
 </details>
 
@@ -61,6 +61,12 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ,De prijzen van de pre-built pc worden overgeslagen en dus niet genoemnd
   ,af en toe is het onduidelijk waar ik mij op het moment bevind
   ,sommige afbeeldingen herkent hij niet
+  
+  <img src="readme-images/test1.png>" width="375px">
+  <img src="readme-images/test1g.png>" width="375px">
+  <img src="readme-images/test1h.png>" width="375px">
+  <img src="readme-images/test1r.png>" width="375px">
+  <img src="readme-images/test1v.png>" width="375px">
   
 
 </details>
