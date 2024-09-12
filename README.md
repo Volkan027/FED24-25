@@ -62,11 +62,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   ,af en toe is het onduidelijk waar ik mij op het moment bevind
   ,sommige afbeeldingen herkent hij niet
   
-  <img src="readme-images/test1.png>" width="375px">
-  <img src="readme-images/test1g.png>" width="375px">
-  <img src="readme-images/test1h.png>" width="375px">
-  <img src="readme-images/test1r.png>" width="375px">
-  <img src="readme-images/test1v.png>" width="375px">
+  <img src="readme-images/test1.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/test1g.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/test1h.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/test1r.png" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/test1v.png" width="375px" alt="breakdown van de hele pagina">
   
 
 </details>
