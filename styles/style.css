@@ -1,8 +1,10 @@
 /**************/
 /* CSS REMEDY */
 /**************/
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 }
 
 
@@ -15,8 +17,9 @@
 /*********************/
 :root {
 	/* startje */
-	--color-text:#111;
-	--color-background:#eee;
+	--color-primary: rgb(138, 1, 252);
+	--space-s: 1em;
+	--space-m: 2em;
 }
 
 
@@ -30,22 +33,71 @@
 /* jouw code */
 @font-face {
 	font-family: 'gothamssm_medium';
-	src:  url('../fonts/gothamssm_medium.woff2') format('woff2'),
+	src: url('../fonts/gothamssm_medium.woff2') format('woff2'),
 }
 
 @font-face {
 	font-family: 'gothamssm_bold';
-	src:  url('../fonts/gothamssm_bold.woff2') format('woff2'),
+	src: url('../fonts/gothamssm_bold.woff2') format('woff2'),
 }
 
 @font-face {
 	font-family: 'gothamssm_light';
-	src:  url('../fonts/gothamssm_light.woff2') format('woff2'),
+	src: url('../fonts/gothamssm_light.woff2') format('woff2'),
+}
+
+body {
+	margin: 0;
+}
+
+header img {
+	max-width: 5em;
 }
 
 header p {
 	font-family: 'gothamssm_light';
-	background-color: rgb(138, 1, 252);
+	background-color: var(--color-primary);
 	color: white;
+	padding: var(--space-s);
+	margin-top: 0;
+	font-size: 80%;
+	text-align: center;
 }
 
+img {
+	max-width: 100vw;
+	max-height: auto;
+}
+
+.promo-home {
+	background-image: url('../images/home-bg-promo.avif');
+	background-size: 500%;
+	background-position: center;
+	height: 600px;
+	width: 100%;
+	color: white;
+	font-family: 'gothamssm_medium';
+	text-align: center;
+}
+
+.promo-afb {
+	max-width: 45%;
+	margin-top: 1em;
+	display: block;
+	margin: 0 auto;
+}
+
+.promo-button {
+	color: white;
+	font-family: 'gothamssm_light';
+	text-decoration: none;
+	border: 2px solid white;
+	padding: 0.7em 1em;
+	border-radius: 7px;
+}
+
+section h2 {
+	font-family: 'gothamssm_bold';
+	font-size: xx-large;
+	text-align: center;
+}

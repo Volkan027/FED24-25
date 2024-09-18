@@ -99,25 +99,29 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+<img src="readme-images/week1.png" width="375px" alt="wat ging er goed week 1">
+- het was lastig om de fonts er succesvol in te krijgen, uiteindelijk is het me gelukt met hulp. het duurde wel even want het moest op een andere manier dan dat
+ik gewend was.
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | volkan         | ---                | ---          | ---              |
+  | Hoe zet ik 2   | en dit             | en ik dit    | en dan ik dat    |
+  | producten met  | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | grids naast elkaar | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - punt 1 - Gebruik articles binnen de sections voor de producten
+  - punt 2 - zet de primary kleur in je root
+  - punt 3 - gebruik voor het product een form met fieldsets met opties
+  - punt 4 - flexbox is niet nodig voor je producten, gebruik articles in je sections, je articles zijn dan grids
+  - punt 5 - gebruik voor quote's het element blockquote
+  - punt 6 h2 en p kunnen in de section
 
 </details>
 
