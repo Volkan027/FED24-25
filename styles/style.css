@@ -50,11 +50,33 @@ body {
 	margin: 0;
 }
 
-header img {
-	max-width: 5em;
+header {
+	margin: 0;
+	padding: .9em;
+	position: fixed;
+	z-index: 1000;
+	width: 100%;
+	background-color: white;
+	top: 2.7em;
+  }
+
+.vergrootglas {
+	max-width: 1.5em;
 }
 
-header p {
+.winkelmand {
+max-width: 1.5em;
+}
+
+.hamburger {
+max-width: 1.2em;
+}
+
+.logo-web {
+	max-width: 3.7em;
+}
+
+.boventekst {
 	font-family: 'gothamssm_light';
 	background-color: var(--color-primary);
 	color: white;
@@ -62,6 +84,11 @@ header p {
 	margin-top: 0;
 	font-size: 80%;
 	text-align: center;
+	padding-bottom: 1.2em;
+	position: fixed;
+    top: 0;
+    width: 100%;
+	z-index: 1000;
 }
 
 img {
@@ -70,14 +97,16 @@ img {
 }
 
 .promo-home {
+	margin-top: 6.3em;
 	background-image: url('../images/home-bg-promo.avif');
-	background-size: 500%;
+	background-size: 600%;
 	background-position: center;
-	height: 600px;
+	height: 650px;
 	width: 100%;
 	color: white;
 	font-family: 'gothamssm_medium';
 	text-align: center;
+	padding-top: 1em;
 }
 
 .promo-afb {
@@ -96,8 +125,72 @@ img {
 	border-radius: 7px;
 }
 
-section h2 {
+.promo-home p {
+	margin-bottom: 2em;
+}
+
+h2 {
 	font-family: 'gothamssm_bold';
 	font-size: xx-large;
 	text-align: center;
 }
+
+li {
+    position: relative;
+    list-style-type: none; 
+	background-color: rgb(245, 245, 245);
+}
+
+
+li p {
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: .2em;
+	background-color: rgb(130, 222, 139);
+	padding: 0.4em .6em;
+	border-radius: 7px;
+	font-family: 'gothamssm_medium';
+	font-size: small;
+
+}
+
+.new-banner {
+	position: absolute;
+    left: 0;
+    top: 0;
+    margin: 0;
+    padding: .2em;
+	background-color: rgb(37, 98, 234);
+	padding: 0.4em .6em;
+	border-radius: 7px;
+	font-family: 'gothamssm_medium';
+	font-size: small;
+	color: white;
+}
+
+
+.producten {
+	display: flex;
+	flex-wrap: wrap; /* Zorgt ervoor dat artikelen naar een nieuwe regel worden verplaatst als er niet genoeg ruimte is */
+	gap: 1em;
+  }
+  
+  article {
+	flex: 1 1 calc(50% - 1em); /* Zorg ervoor dat elk artikel 50% van de breedte krijgt, min de gap ruimte */
+	box-sizing: border-box; /* padding en borders worden meegeteld bij de breedte en hoogte */
+	max-width: calc(50% - 1em); /* Zorg ervoor dat elk artikel niet breder wordt dan 50% van de container minus de gap */
+  }
+  
+  article img {
+	display: block;
+	width: 100%; 
+	height: auto; 
+  }
+  
+  article p {
+	margin: 0;
+  }
+
+  
