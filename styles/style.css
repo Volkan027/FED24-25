@@ -96,6 +96,12 @@ img {
 	max-height: auto;
 }
 
+.intro-woord {
+	text-align: center;
+	font-size: medium;
+	color: grey;
+}
+
 .promo-home {
 	margin-top: 6.3em;
 	background-image: url('../images/home-bg-promo.avif');
@@ -135,32 +141,33 @@ h2 {
 	text-align: center;
 }
 
-li {
-    position: relative;
-    list-style-type: none; 
-	background-color: rgb(245, 245, 245);
-}
-
-
-li p {
+article h3 {
     position: absolute;
-    left: 0;
+    left: 2em;
     top: 0;
-    margin: 0;
     padding: .2em;
 	background-color: rgb(130, 222, 139);
 	padding: 0.4em .6em;
 	border-radius: 7px;
 	font-family: 'gothamssm_medium';
 	font-size: small;
+}
 
+h4 {
+	font-family: 'gothamssm_bold';
+}
+
+h5 {
+	margin-bottom: 3px;
+	color: rgb(23, 137, 11);
+	font-family: 'gothamssm_medium';
+	margin-top: 5px;
 }
 
 .new-banner {
 	position: absolute;
-    left: 0;
+    left: 2em;
     top: 0;
-    margin: 0;
     padding: .2em;
 	background-color: rgb(37, 98, 234);
 	padding: 0.4em .6em;
@@ -181,16 +188,24 @@ li p {
 	flex: 1 1 calc(50% - 1em); /* Zorg ervoor dat elk artikel 50% van de breedte krijgt, min de gap ruimte */
 	box-sizing: border-box; /* padding en borders worden meegeteld bij de breedte en hoogte */
 	max-width: calc(50% - 1em); /* Zorg ervoor dat elk artikel niet breder wordt dan 50% van de container minus de gap */
+	position: relative;
+	padding-left: 1em;
   }
   
   article img {
 	display: block;
 	width: 100%; 
 	height: auto; 
+	background-color: rgb(245, 245, 245);
   }
   
   article p {
 	margin: 0;
+  }
+
+  p {
+	font-family: 'gothamssm_light';
+	font-size: small;
   }
 
   
