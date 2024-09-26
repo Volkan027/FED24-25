@@ -48,6 +48,7 @@
 
 body {
 	margin: 0;
+	padding: 0;
 }
 
 header {
@@ -58,22 +59,32 @@ header {
 	width: 100%;
 	background-color: white;
 	top: 2.7em;
-  }
-
-.vergrootglas {
-	max-width: 1.5em;
 }
 
-.winkelmand {
-max-width: 1.5em;
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 1em; /* Ruimte aan beide zijden */
+}
+
+.rechter-nav {
+	display: flex;
+	align-items: center;
+}
+
+.winkelmand, .vergrootglas {
+	max-width: 1.4em;
+	margin-left: 1em;
 }
 
 .hamburger {
-max-width: 1.2em;
+	max-width: 1.2em;
 }
 
 .logo-web {
-	max-width: 3.7em;
+	max-width: 3.8em;
+	margin-left: 1em;
 }
 
 .boventekst {
@@ -86,8 +97,8 @@ max-width: 1.2em;
 	text-align: center;
 	padding-bottom: 1.2em;
 	position: fixed;
-    top: 0;
-    width: 100%;
+	top: 0;
+	width: 100%;
 	z-index: 1000;
 }
 
@@ -103,7 +114,7 @@ img {
 }
 
 .promo-home {
-	margin-top: 6.3em;
+	margin-top: 6em;
 	background-image: url('../images/home-bg-promo.avif');
 	background-size: 600%;
 	background-position: center;
@@ -112,7 +123,11 @@ img {
 	color: white;
 	font-family: 'gothamssm_medium';
 	text-align: center;
-	padding-top: 1em;
+	padding-top: 2em;
+}
+
+.promo-home p {
+font-size: 17px;
 }
 
 .promo-afb {
@@ -142,15 +157,19 @@ h2 {
 }
 
 article h3 {
-    position: absolute;
-    left: 2em;
-    top: 0;
-    padding: .2em;
+	position: absolute;
+	left: 2em;
+	top: 0;
+	padding: .2em;
 	background-color: rgb(130, 222, 139);
 	padding: 0.4em .6em;
 	border-radius: 7px;
 	font-family: 'gothamssm_medium';
 	font-size: small;
+}
+
+article p {
+	font-size: 12px;
 }
 
 h4 {
@@ -161,14 +180,23 @@ h5 {
 	margin-bottom: 3px;
 	color: rgb(23, 137, 11);
 	font-family: 'gothamssm_medium';
-	margin-top: 5px;
+	margin-top: 10px;
+	font-size: 12px;
+}
+
+article :nth-last-child(2) {
+	color: rgb(180, 180, 180)
+}
+
+article :nth-last-child(1) {
+	font-family: 'gothamssm_medium';
 }
 
 .new-banner {
 	position: absolute;
-    left: 2em;
-    top: 0;
-    padding: .2em;
+	left: 2em;
+	top: 0;
+	padding: .2em;
 	background-color: rgb(37, 98, 234);
 	padding: 0.4em .6em;
 	border-radius: 7px;
@@ -180,32 +208,90 @@ h5 {
 
 .producten {
 	display: flex;
-	flex-wrap: wrap; /* Zorgt ervoor dat artikelen naar een nieuwe regel worden verplaatst als er niet genoeg ruimte is */
+	flex-wrap: wrap;
+	/* Zorgt ervoor dat artikelen naar een nieuwe regel worden verplaatst als er niet genoeg ruimte is */
 	gap: 1em;
-  }
-  
-  article {
-	flex: 1 1 calc(50% - 1em); /* Zorg ervoor dat elk artikel 50% van de breedte krijgt, min de gap ruimte */
-	box-sizing: border-box; /* padding en borders worden meegeteld bij de breedte en hoogte */
-	max-width: calc(50% - 1em); /* Zorg ervoor dat elk artikel niet breder wordt dan 50% van de container minus de gap */
+}
+
+article {
+	flex: 1 1 calc(50% - 1em);
+	/* Zorg ervoor dat elk artikel 50% van de breedte krijgt, min de gap ruimte */
+	box-sizing: border-box;
+	/* padding en borders worden meegeteld bij de breedte en hoogte */
+	max-width: calc(50% - 1em);
+	/* Zorg ervoor dat elk artikel niet breder wordt dan 50% van de container minus de gap */
 	position: relative;
 	padding-left: 1em;
-  }
-  
-  article img {
-	display: block;
-	width: 100%; 
-	height: auto; 
-	background-color: rgb(245, 245, 245);
-  }
-  
-  article p {
-	margin: 0;
-  }
+}
 
-  p {
+article img {
+	display: block;
+	width: 100%;
+	height: auto;
+	background-color: rgb(245, 245, 245);
+}
+
+.producten article:nth-of-type(4) img,
+.producten article:nth-of-type(5) img,
+.producten article:nth-of-type(6) img {
+    background: linear-gradient(to bottom, rgb(22,17,39), white);
+}
+
+article p {
+	margin: 0;
+}
+
+p {
 	font-family: 'gothamssm_light';
 	font-size: small;
-  }
+}
 
-  
+.amd-pc {
+	background-image: url('../images/nzxt-amd-background.avif');
+	background-size: 100%;
+	color: white;
+	margin: 1em;
+	height: 680px;
+	border-radius: 7px;
+}
+
+.amd-afb {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto; /* Zorgt ervoor dat de afbeelding horizontaal gecentreerd wordt */
+}
+
+.amd-pc p {
+	font-size: 105%;
+	margin-left: 2em;
+	text-align: left;
+	margin-right: 2em;
+	line-height: 1.5em;
+	font-family: 'gothamssm_light';
+	word-spacing: 0.3em;
+}
+
+.amd-pc h2 {
+	font-size: 1.5em;
+	margin-left: 0;
+	text-align: left;
+	margin-left: 1.3em;
+	margin-top: 0em;
+}
+
+.amd-button {
+    display: block;
+    max-width: 90%;
+    margin: 0 auto;
+    padding: 0.7em 1em;
+    border-radius: 7px;
+    border: 2px solid white;
+    color: white;
+    text-decoration: none;
+	font-family: 'gothamssm_light';
+}
+
+.amd-pc img:nth-of-type(2) {
+   margin-left: 2em;
+   margin-bottom: 0.2em;
+}
