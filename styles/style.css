@@ -18,6 +18,25 @@
 :root {
 	/* startje */
 	--color-primary: rgb(138, 1, 252);
+	--color-background: white;
+	--color-grijs:grey;
+    --color-secondary: rgb(205, 205, 213);
+    --color-light-grey: rgb(245, 245, 245);
+    --color-dark-grey: rgb(26, 28, 30);
+    --color-blauw: rgb(71, 132, 255);
+    --color-groen: rgb(130, 222, 139);
+    --color-klarna: rgb(255, 179, 199);
+	--color-andergroen: rgb(23, 137, 11);
+	--color-weirdgray: rgb(180, 180, 180);
+	--color-bannerblue: rgb(37, 98, 234);
+	--color-productbg: rgb(22, 17, 39);
+	--color-icueban:rgb(50, 50, 52);
+	--color-purple2:rgb(115, 21, 229);
+	--color-footer: rgb(55, 55, 61);
+	--color-button-onder: rgb(146, 146, 157);
+	--color-foot-wit: rgb(130, 130, 165);
+	--color-supportbg: rgb(235, 235, 239);
+	--color-text: black;
 	--space-s: 1em;
 	--space-m: 2em;
 }
@@ -49,6 +68,8 @@
 body {
 	margin: 0;
 	padding: 0;
+	background-color: var(--color-background);
+	color: var(--color-text);
 }
 
 header {
@@ -57,7 +78,7 @@ header {
 	position: fixed;
 	z-index: 1000;
 	width: 100%;
-	background-color: white;
+	background-color: var(--color-background);
 	top: 2.7em;
 }
 
@@ -65,7 +86,7 @@ nav {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
-	padding: 0 1em; /* Ruimte aan beide zijden */
+	padding: 0 1em;
 }
 
 .rechter-nav {
@@ -73,7 +94,8 @@ nav {
 	align-items: center;
 }
 
-.winkelmand, .vergrootglas {
+.winkelmand,
+.vergrootglas {
 	max-width: 1.4em;
 	margin-left: 1em;
 }
@@ -90,7 +112,7 @@ nav {
 .boventekst {
 	font-family: 'gothamssm_light';
 	background-color: var(--color-primary);
-	color: white;
+	color: var(--color-background);
 	padding: var(--space-s);
 	margin-top: 0;
 	font-size: 80%;
@@ -104,13 +126,12 @@ nav {
 
 img {
 	max-width: 100vw;
-	max-height: auto;
 }
 
 .intro-woord {
 	text-align: center;
 	font-size: medium;
-	color: grey;
+	color: var(--color-grijs);
 }
 
 .promo-home {
@@ -118,16 +139,16 @@ img {
 	background-image: url('../images/home-bg-promo.avif');
 	background-size: 600%;
 	background-position: center;
-	height: 650px;
+	height: 40.6em;
 	width: 100%;
-	color: white;
+	color: var(--color-background);
 	font-family: 'gothamssm_medium';
 	text-align: center;
 	padding-top: 2em;
 }
 
 .promo-home p {
-font-size: 17px;
+	font-size: 106%;
 }
 
 .promo-afb {
@@ -137,7 +158,7 @@ font-size: 17px;
 	margin: 0 auto;
 }
 
-.promo-button {
+.promo-home a {
 	color: white;
 	font-family: 'gothamssm_light';
 	text-decoration: none;
@@ -152,7 +173,7 @@ font-size: 17px;
 
 h2 {
 	font-family: 'gothamssm_bold';
-	font-size: xx-large;
+	font-size: 190%;
 	text-align: center;
 }
 
@@ -161,7 +182,7 @@ article h3 {
 	left: 2em;
 	top: 0;
 	padding: .2em;
-	background-color: rgb(130, 222, 139);
+	background-color: var(--color-groen);
 	padding: 0.4em .6em;
 	border-radius: 7px;
 	font-family: 'gothamssm_medium';
@@ -169,7 +190,7 @@ article h3 {
 }
 
 article p {
-	font-size: 12px;
+	font-size: 75%;
 }
 
 h4 {
@@ -177,15 +198,15 @@ h4 {
 }
 
 h5 {
-	margin-bottom: 3px;
-	color: rgb(23, 137, 11);
+	margin-bottom: 0.1875em;
+	color: var(--color-andergroen);
 	font-family: 'gothamssm_medium';
-	margin-top: 10px;
-	font-size: 12px;
+	margin-top: 0.625em;
+	font-size: 75%;
 }
 
 article :nth-last-child(2) {
-	color: rgb(180, 180, 180)
+	color: var(--color-weirdgray);
 }
 
 article :nth-last-child(1) {
@@ -197,19 +218,19 @@ article :nth-last-child(1) {
 	left: 2em;
 	top: 0;
 	padding: .2em;
-	background-color: rgb(37, 98, 234);
+	background-color: var(--color-bannerblue);
 	padding: 0.4em .6em;
 	border-radius: 7px;
 	font-family: 'gothamssm_medium';
 	font-size: small;
-	color: white;
+	color: var(--color-background);
 }
 
 
 .producten {
 	display: flex;
 	flex-wrap: wrap;
-	/* Zorgt ervoor dat artikelen naar een nieuwe regel worden verplaatst als er niet genoeg ruimte is */
+	/* Zorgt ervoor dat artikelen naar een nieuwe regel worden verplaatst als er niet genoeg ruimte is, chatgpt */
 	gap: 1em;
 }
 
@@ -217,9 +238,9 @@ article {
 	flex: 1 1 calc(50% - 1em);
 	/* Zorg ervoor dat elk artikel 50% van de breedte krijgt, min de gap ruimte */
 	box-sizing: border-box;
-	/* padding en borders worden meegeteld bij de breedte en hoogte */
+	/* padding en borders worden meegeteld bij de breedte en hoogte, chatgpt*/
 	max-width: calc(50% - 1em);
-	/* Zorg ervoor dat elk artikel niet breder wordt dan 50% van de container minus de gap */
+	/* Zorg ervoor dat elk artikel niet breder wordt dan 50% van de container minus de gap, chatgpt*/
 	position: relative;
 	padding-left: 1em;
 }
@@ -228,13 +249,13 @@ article img {
 	display: block;
 	width: 100%;
 	height: auto;
-	background-color: rgb(245, 245, 245);
+	background-color: var(--color-light-grey);
 }
 
 .producten article:nth-of-type(4) img,
 .producten article:nth-of-type(5) img,
 .producten article:nth-of-type(6) img {
-    background: linear-gradient(to bottom, rgb(22,17,39), white);
+	background: linear-gradient(to bottom, var(--color-productbg), var(--color-background));
 }
 
 article p {
@@ -249,16 +270,16 @@ p {
 .amd-pc {
 	background-image: url('../images/nzxt-amd-background.avif');
 	background-size: 100%;
-	color: white;
+	color: var(--color-background);
 	margin: 1em;
-	height: 680px;
+	height: 42.5em;
 	border-radius: 7px;
 }
 
 .amd-afb {
-    max-width: 100%;
-    display: block;
-    margin: 0 auto; /* Zorgt ervoor dat de afbeelding horizontaal gecentreerd wordt */
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
 }
 
 .amd-pc p {
@@ -279,19 +300,781 @@ p {
 	margin-top: 0em;
 }
 
-.amd-button {
-    display: block;
-    max-width: 90%;
-    margin: 0 auto;
-    padding: 0.7em 1em;
-    border-radius: 7px;
-    border: 2px solid white;
-    color: white;
-    text-decoration: none;
+.amd-pc a {
+	display: block;
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 0.7em 1em;
+	border-radius: 7px;
+	border: 2px solid white;
+	color: var(--color-background);
+	text-decoration: none;
 	font-family: 'gothamssm_light';
 }
 
 .amd-pc img:nth-of-type(2) {
-   margin-left: 2em;
-   margin-bottom: 0.2em;
+	margin-left: 2em;
+	margin-bottom: 0.2em;
+}
+
+.rtx90-pc {
+	background-image: url('../images/green-bg.avif');
+	background-position: center;
+	background-size: 110%;
+	height: 37.5em;
+	margin: 1em;
+	border-radius: 7px;
+}
+
+.rtx90-pc img {
+	max-width: 95%;
+	display: block;
+	margin: 1em auto;
+}
+
+.rtx90-pc h2 {
+	color: var(--color-background);
+	font-size: 1.5em;
+	text-align: left;
+	margin-left: 1.4em;
+	padding-top: 1em;
+}
+
+.rtx90-pc p {
+	color: var(--color-background);
+	font-size: 105%;
+	margin-left: 2em;
+	text-align: left;
+	margin-right: 2em;
+	line-height: 1.5em;
+	font-family: 'gothamssm_light';
+	word-spacing: 0.3em;
+	padding-bottom: 1em;
+}
+
+.rtx90-pc a {
+	margin: 2em;
+	padding: 0.7em 1em;
+	border-radius: 7px;
+	border: 2px solid white;
+	color: var(--color-background);
+	text-decoration: none;
+	font-family: 'gothamssm_light';
+}
+
+blockquote img {
+	width: 60%;
+	display: block;
+	margin: 0 auto;
+}
+
+blockquote p {
+	font-family: 'gothamssm_light';
+	font-size: 115%;
+	text-align: center;
+	line-height: 1.5em;
+}
+
+blockquote {
+	background-color: var(--color-light-grey);
+	margin: 1em;
+	padding: 2em;
+	border-radius: 7px;
+}
+
+.new-release-woord {
+	text-align: center;
+	font-size: 110%;
+	color: grey;
+	margin: 1.5em;
+}
+
+.h5-blauw {
+	background-image: url('../images/blue-bg.avif');
+	background-size: 210%;
+	height: 34em;
+	margin: 1em;
+	border-radius: 7px;
+}
+
+.h5-blauw img {
+	max-width: 95%;
+	display: block;
+	margin: 1em auto;
+	/*afbeelding horizontaal gecentreerd */
+}
+
+.h5-blauw h3 {
+	color: var(--color-background);
+	font-size: 1.5em;
+	text-align: left;
+	margin-left: 1.4em;
+	font-family: 'gothamssm_bold';
+	padding-top: 0;
+}
+
+.h5-blauw p {
+	color: var(--color-background);
+	font-size: 115%;
+	margin-left: 2em;
+	text-align: left;
+	margin-right: 2em;
+	line-height: 1.5em;
+	font-family: 'gothamssm_medium';
+	padding-bottom: 1em;
+	margin-bottom: 0;
+}
+
+.h5-blauw a {
+	margin: 1.3em;
+	padding: 0.7em 1em;
+	color: var(--color-background);
+	text-decoration: none;
+	font-family: 'gothamssm_medium';
+}
+
+.warm-pc {
+	background-image: url('../images/pc-warm.avif');
+	background-size: 200%;
+	height: 31.25em;
+	margin: 1em;
+	border-radius: 7px;
+	background-position: center;
+}
+
+.warm-pc h2 {
+	color: var(--color-background);
+	font-size: 1.5em;
+	text-align: center;
+	font-family: 'gothamssm_bold';
+	padding-top: 1em;
+}
+
+.warm-pc p {
+	color: var(--color-background);
+	font-size: 120%;
+	margin-left: 1.2em;
+	margin-right: 1.2em;
+	text-align: center;
+	line-height: 1.5em;
+	font-family: 'gothamssm_light';
+}
+
+.warm-pc a {
+	color: var(--color-background);
+	text-decoration: none;
+	font-family: 'gothamssm_medium';
+	display: flex;
+	justify-content: center;
+}
+
+.icue-ban {
+	background-image: url('../images/fansbg.avif');
+	height: 28.75em;
+	background-size: 100%;
+	margin: 1em;
+	border-radius: 7px;
+}
+
+.icue-ban img {
+	max-width: 100%;
+	margin-top: 2em;
+}
+
+.icue-ban h2 {
+	color: var(--color-icueban);
+	font-family: 'gothamssm_bold';
+	font-size: 150%;
+	text-align: left;
+	padding-top: 1.5em;
+	margin-left: 1.8em;
+	margin-bottom: 0em;
+}
+
+.icue-ban p {
+	text-align: left;
+	margin-left: 2.3em;
+	font-family: 'gothamssm_light';
+	font-size: 115%;
+	line-height: 1.5em;
+	margin-top: 0.5em;
+}
+
+.icue-ban a {
+	color: var(--color-purple2);
+	text-decoration: none;
+	font-family: 'gothamssm_medium';
+	margin-left: 2.8em;
+}
+
+.simple-fan {
+	background-color: var(--color-light-grey);
+	margin-top: 3em;
+	margin-left: 1em;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	border-radius: 7px;
+}
+
+.simple-fan img {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.simple-fan h2 {
+	font-size: 150%;
+	margin-bottom: 0em;
+}
+
+.simple-fan p {
+	font-size: 120%;
+	margin-left: 2.5em;
+	margin-right: 2.5em;
+	text-align: center;
+	line-height: 1.5em;
+	font-family: 'gothamssm_light';
+	margin-top: 0em;
+}
+
+.simple-fan a {
+	color: var(--color-purple2);
+	text-decoration: none;
+	font-family: 'gothamssm_medium';
+	display: flex;
+	justify-content: center;
+	padding-bottom: 2em;
+}
+
+.producten-twee {
+	display: flex;
+	flex-wrap: wrap;
+	/* Zorgt ervoor dat artikelen naar een nieuwe regel worden verplaatst als er niet genoeg ruimte is, chatgpt*/
+	gap: 1em;
+}
+
+.producten-twee article:nth-of-type(1) img {
+	background: linear-gradient(to bottom, var(--color-productbg), var(--color-background));
+}
+
+.klarna-banner {
+	background-color: var(--color-klarna);
+	margin: 1em;
+	border-radius: 7px;
+	height: 37.5em;
+}
+
+.klarna-banner img:nth-of-type(1) {
+	margin-left: 2em;
+	margin-bottom: 0.2em;
+	width: 50%;
+	margin-top: 2em;
+}
+
+.klarna-banner h2 {
+	font-size: 1.5em;
+	text-align: left;
+	margin-left: 1.3em;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+
+.klarna-banner p {
+	font-size: 100%;
+	margin-left: 2em;
+	text-align: left;
+	margin-right: 2em;
+	line-height: 1.5em;
+	font-family: 'gothamssm_light';
+	padding-bottom: 1em;
+	margin-top: 0em;
+}
+
+.klarna-banner img:nth-of-type(2) {
+	max-width: 100%;
+	display: block;
+	margin: 0 auto;
+}
+
+.last-banner {
+	background-image: url('../images/vibe-pc-bg.avif');
+	height: 33.75em;
+	background-size: 230%;
+	background-position: 50%;
+	max-width: 100%;
+}
+
+.last-banner h3 {
+	color: var(--color-background);
+	font-size: 0.8em;
+	text-align: center;
+	font-family: 'gothamssm_bold';
+	padding-top: 12em;
+	margin-bottom: 1em;
+}
+
+.last-banner h2 {
+	color: var(--color-background);
+	font-size: 1.9em;
+	text-align: center;
+	font-family: 'gothamssm_bold';
+	margin-top: 0em;
+	padding-bottom: 0.7em;
+}
+
+.last-banner a {
+	color: var(--color-background);
+	text-decoration: none;
+	font-family: 'gothamssm_light';
+	display: flex;
+	justify-content: center;
+}
+
+footer {
+	color: var(--color-background);
+	font-family: 'gothamssm_light';
+}
+
+.contact-maken-foot {
+	background: linear-gradient(to bottom, var(--color-footer), var(--color-dark-grey));
+	margin-top: -1.6em;
+}
+
+.contact-maken-foot h2 {
+	color: var(--color-background);
+	font-size: 190%;
+	text-align: left;
+	margin-left: 0.6em;
+	padding-top: 2em;
+}
+
+.contact-maken-foot h3 {
+	color: var(--color-background);
+	font-size: 100%;
+	margin-left: 1.3em;
+	text-align: left;
+	margin-right: 1.5em;
+	font-family: 'gothamssm_medium';
+	padding-bottom: 1em;
+}
+
+form {
+	/*chatgpt*/
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* Zorgt dat de elementen in het midden staan */
+}
+
+input[type="email"],/* oproepen met hulp van chatgpt*/
+button {
+	background-color: var(--color-background);
+	border: 1px solid var(--color-background);
+	padding: 0.8em;
+	font-size: 100%;
+	width: 100%;
+	max-width: 25em;
+	border-radius: 7px;
+	box-sizing: border-box;
+	margin-bottom: 0.6em;
+}
+
+button {
+	border: none;
+	background-color: var(--color-secondary);
+	font-family: 'gothamssm_medium';
+	color: var(--color-button-onder);
+}
+
+footer a {
+	color: var(--color-blauw);
+	text-decoration: none;
+}
+
+input[type="checkbox"] {
+	font-size: 10%;
+}
+
+.info-foot {
+	background-color: var(--color-dark-grey);
+	margin-bottom: -10em;
+}
+
+.info-foot h2 {
+	color: var(--color-foot-wit);
+	font-family: 'gothamssm_light';
+	font-size: 80%;
+	padding-top: 2em;
+	margin-left: 0em;
+}
+
+
+.heading-container {
+	display: flex;
+	justify-content: center;
+	gap: 6.25em;
+	/*chatgpt*/
+	max-width: 37.5em;
+	margin: 0 auto;
+	font-size: 80%;
+}
+
+.paragraph-container {
+	display: flex;
+	justify-content: center;
+	gap: 5.6em;
+	max-width: 37.5em;
+	margin: 0 auto;
+	font-family: 'gothamssm_medium';
+}
+
+
+ul {
+	list-style-type: none;
+	padding: 0em;
+	margin: 0em;
+}
+
+li {
+	margin: 0.94em;
+}
+
+.separator {
+	/* tip van chatgpt*/
+	width: 90%;
+	height: 1px;
+	background-color: var(--color-background);
+	margin: 0 auto;
+}
+
+select {
+	/*chatgpt*/
+	appearance: none;
+	/* Verwijder de standaard dropdown styling */
+	border: none;
+	/* Geen rand */
+	background: none;
+	/* Geen achtergrond */
+	color: inherit;
+	/* Neem de kleur over van de ouder */
+	font: inherit;
+	/* Neem het lettertype over van de ouder */
+	padding: 0;
+	/* Geen padding */
+	width: auto;
+	/* Automatische breedte */
+	cursor: pointer;
+	/* Cursor verandert naar pointer */
+}
+
+.info-foot h6,
+.info-foot h4 {
+	text-align: center;
+	padding-bottom: 1em;
+}
+
+
+
+/******************************************************/
+/**************TWEEDE PAGINA VOOR PRODUCT**************/
+/******************************************************/
+
+.bg-product-body {
+	background: linear-gradient(to right, rgb(17, 16, 24), rgb(19, 9, 43), rgb(17, 16, 24));
+	color: white;
+	margin-top: 5.95em;
+}
+
+.top-zoek {
+	color: black;
+	background-color: white;
+	padding: 1.2em;
+	font-family: 'gothamssm_medium';
+	font-size: 90%;
+}
+
+
+
+
+/******************************************************/
+/**************TWEEDE PAGINA VOOR SUPPORT**************/
+/******************************************************/
+
+.body-support {
+	margin-top: 7em;
+}
+
+.support-help {
+	background-color: var(--color-supportbg);
+	height: 30em;
+	margin: 1em;
+	border-radius: 7px;
+}
+
+.support-help img:nth-of-type(1) {
+	width: 50%;
+	display: block;
+	margin: 0 auto;
+	padding-top: 2em;
+}
+
+.support-help img:nth-of-type(2) {
+	width: 100%;
+	padding-bottom: 2em;
+}
+
+.support-help h2 {
+	font-size: 100%;
+	margin-left: 2em;
+	margin-right: 2em;
+	text-align: center;
+	line-height: 1.5em;
+	font-family: 'gothamssm_light';
+}
+
+.support-info h2 {
+	text-align: left;
+	margin-left: 1em;
+	margin-top: 2em;
+	font-size: 150%;
+	padding-bottom: 1.5em;
+}
+
+.support-info a {
+	color: var(--color-background);
+	font-family: 'gothamssm_medium';
+	text-decoration: none;
+	margin-left: 2.3em;
+	padding: 0.8em 5.5em;
+	border-radius: 7px;
+	background-color: var(--color-primary);
+}
+
+.support-info h3 {
+	color: var(--color-button-onder);
+	font-family: 'gothamssm_light';
+	font-size: 80%;
+	padding-top: 3em;
+	margin-left: 3em;
+}
+
+.support-info h4 {
+	font-family: 'gothamssm_bold';
+	font-size: 95%;
+	margin-left: 2.6em;
+	margin-bottom: 0em;
+}
+
+.support-info p {
+	font-family: 'gothamssm_light';
+	margin-left: 2.6em;
+	line-height: 1.4em;
+	margin-top: 0em;
+	font-size: 95%;
+}
+
+.zoeken-support {
+    text-align: center;
+    margin: 1em;
+}
+
+.zoeken-support p{
+text-align: left;
+}
+
+.zoek-input {
+    width: 100%;
+    max-width: 25em;
+    padding: 1em;
+    border: 1px solid lightgray;
+    border-radius: 7px;
+}
+
+.zoek-button {
+    margin-top: 0.5em;
+    padding: .8em 1em;
+    background-color: var(--color-primary);
+    color: var(--color-background);
+    border-radius: 7px;
+	max-width: 55%;
+}
+
+.veel-tekst {
+	margin: 1em;
+	margin-bottom: 3em;
+}
+
+.veel-tekst h2 {
+	text-align: left;
+	font-family: 'gothamssm_medium';
+	font-size: 125%;
+	
+}
+
+.veel-tekst p {
+	text-align: left;
+	font-family: 'gothamssm_light';
+	font-size: 100%;
+	line-height: 1.4em;
+}
+
+.lijn {
+    width: 100%;
+    height: 2px;
+    background-color: var(--color-light-grey);
+}
+
+.chatten {
+	position: fixed; 
+    bottom: 1.25em; 
+    right: 1.25em; 
+    width: 14%;
+    height: auto; 
+    border-radius: 7px;
+    z-index: 1000;
+}
+
+
+
+
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+
+
+
+
+/*********************************************************/
+/*********************Surface Plane***********************/
+/*********************************************************/
+
+
+
+.topnav #myLinks {
+	display: none;
+  }
+  
+
+/* hamburger menu met hulp van w3schools*/
+.topnav {
+	background-color: var(--color-background);
+  }
+
+  /* hamburger menu met hulp van w3schools*/
+  .topnav a {
+	color: black;
+	padding: 1em;
+	text-decoration: none;
+	font-size: 125%;
+	display: block;
+  }
+
+
+
+
+/*voor de dark light en halloween mode */
+  [data-theme="dark"] {
+    --color-background: black;
+    --color-text: white;
+    --color-grijs: gray;
+    --color-secondary: black;
+    --color-light-grey: black;
+    --color-dark-gray: white;
+    --color-weirdgray: black;
+    --color-productbg: lightpink;
+    --color-icueban: white;
+    --color-footer: white;
+    --color-foot-wit: white;
+}
+
+[data-theme="light"] {
+    --color-background: white;
+    --color-text: black;
+    --color-grijs: gray;
+    --color-secondary: gray;
+    --color-light-grey: lightgray;
+    --color-dark-gray: darkgray;
+    --color-weirdgray: white;
+    --color-productbg: white;
+    --color-icueban: black;
+    --color-footer: black;
+    --color-foot-wit: black;
+}
+
+[data-theme="halloween"] {
+    --color-background: orange;
+    --color-text: black;
+    --color-grijs: gray;
+    --color-secondary: purple;
+    --color-light-grey: white;
+    --color-dark-gray: black;
+    --color-weirdgray: yellow;
+    --color-productbg: lightcoral;
+    --color-icueban: black;
+    --color-footer: darkorange;
+    --color-foot-wit: white;
+}
+
+
+
+  
+
+  
+
+/*hulp van chatgpt*/
+.chat-popup {
+    display: none; /* Begin met onzichtbaar */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8); /* Achtergrond verduistering */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Voorgrond plaatsen */
+}
+
+
+.popup-content {
+    background-color: var(--color-primary);
+    padding: 1.1em;
+    border-radius: 7px;
+    width: 18.75em;
+    height: 19em;
+    display: flex;
+    flex-direction: column;
+	font-family: 'gothamssm_medium';
+}
+
+
+button.close {
+    background-color: var(--color-dark-grey);
+    color: white;
+    padding: 0;
+    margin-bottom: 1em;
+    border-radius: 7px;
+	font-family: 'gothamssm_medium';
+}
+
+
+textarea {
+    width: 100%;
+    height: 50%;
+    padding: 2em;
+    box-sizing: border-box;
+	font-family: 'gothamssm_medium';
+}
+
+video {
+	width: 100%;
+}
+
+.knop-video {
+	background-color: var(--color-blauw);
+	color: var(--color-background);
 }

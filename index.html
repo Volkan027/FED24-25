@@ -19,22 +19,36 @@
 	<header>
 		<nav>
 			<div class="linker-nav">
-				<img class="hamburger" src="icons/hamburger-menu.png" alt="">
-				<img class="logo-web" src="images/nzxt-logo-png.png" alt="">
+				<!-- onlick genoodzaakt-->
+				<img class="hamburger" src="icons/hamburger-menu.png" onclick="hamburger()" alt="menu">
+				<a href="support.html">
+					<img class="logo-web" src="images/nzxt-logo-png.png" alt="logo nzxt">
+				</a>
 			</div>
 			<div class="rechter-nav">
-				<img class="vergrootglas" src="icons/vergrootglas.png" alt="">
-				<img class="winkelmand" src="icons/winkelmand.png" alt="">
+				<img class="vergrootglas" src="icons/vergrootglas.png" alt="Zoeken">
+				<img class="winkelmand" src="icons/winkelmand.png" alt="Winkelwagen">
 			</div>
 		</nav>
+		<div class="topnav">
+			<div id="myLinks">
+				<a href="">Gaming PCs</a>
+				<a href="">Components</a>
+				<a href="">Gaming Gear</a>
+				<a href="">Monitors</a>
+				<a href="">Software</a>
+				<a href="">Community</a>
+				<a href="support.html"> ? Support</a>
+			</div>
+		</div>
 	</header>
 
 	<section class="promo-home">
-		<img class="promo-afb" src="images/intel-gamer-days.avif" alt="">
+		<img class="promo-afb" src="images/intel-gamer-days.avif" alt="Promo Foto Intel Gamer Days NZXT">
 		<h2>Intel® Gamer Days is <br>here</h2>
 		<p>21 days of epic offers across our high-<br>performance gaming range.</p>
-		<a class="promo-button" href="">Discover More</a>
-		<img src="images/home-pc.avif" alt="">
+		<a href="">Discover More</a>
+		<img src="images/home-pc.avif" alt="Promo Pc afbeelding">
 	</section>
 
 	<h2>NZXT Prebuilt Gaming PCs</h2>
@@ -45,7 +59,7 @@
 
 		<article>
 			<h3>Promotion</h3>
-			<img src="images/h5-flow-rtx4060.avif" alt="">
+			<img src="images/h5-flow-rtx4060.avif" alt="Afbeelding H5 Flow Rtx4060 gaming pc">
 			<h4>Player: One</h4>
 			<p>H5 Flow RTX 4060 Prebuilt Gaming PC</p>
 			<h5>Ships by 16.09.24</h5>
@@ -56,7 +70,7 @@
 
 		<article>
 			<h3 class="new-banner">New</h3>
-			<img src="images/player-two-h6-flow.avif" alt="">
+			<img src="images/player-two-h6-flow.avif" alt="Afbeelding h6 flow rtx4070 super gaming pc">
 			<h4>Player: Two</h4>
 			<p>H6 Flow RTX 4070 SUPER Prebuilt Gaming PC</p>
 			<h5>Ships by 16.09.24</h5>
@@ -67,7 +81,7 @@
 
 		<article>
 			<h3>Promotion</h3>
-			<img src="images/player-three-h7-flow.avif" alt="">
+			<img src="images/player-three-h7-flow.avif" alt="afbeelding h7 flow rtx4070 ti super gaming pc">
 			<h4>Player: Three</h4>
 			<p>H7 Flow RTX 4070 Ti SUPER Prebuilt Gaming PC</p>
 			<h5>Ships by 16.09.24</h5>
@@ -78,7 +92,7 @@
 
 		<article>
 			<h3>Promotion</h3>
-			<img src="images/player-one-prime.avif" alt="">
+			<img src="images/player-one-prime.avif" alt="afbeelding h5 flow rtx 4060 ti gaming pc">
 			<h4>Player: One Prime</h4>
 			<p>H5 Flow RTX 4060 Ti Prebuilt Gaming PC</p>
 			<h5>Ships by 16.09.24</h5>
@@ -89,7 +103,7 @@
 
 		<article>
 			<h3 class="new-banner">New</h3>
-			<img src="images/player-two-prime.avif" alt="">
+			<img src="images/player-two-prime.avif" alt="afbeelding h6 flow rgb rtx4070 ti super gaming pc">
 			<h4>Player: Two Prime</h4>
 			<p>H6 Flow RGB RTX 4070 Ti SUPER Prebuilt Gaming PC</p>
 			<h5>Ships by 16.09.24</h5>
@@ -100,7 +114,9 @@
 
 		<article>
 			<h3>Promotion</h3>
-			<img src="images/player-three-prime.avif" alt="">
+			<a href="product.html">
+				<img src="images/player-three-prime.avif" alt="afbeelding h9 elite rtx 4090 gaming pc">
+			</a>
 			<h4>Player: Three Prime</h4>
 			<p>H9 Elite RTX 4090 Prebuilt Gaming PC</p>
 			<h5>Ships by 16.09.24</h5>
@@ -112,202 +128,305 @@
 	</section>
 
 	<section class="amd-pc">
-		<img class="amd-afb" src="images/nzxt-amd-pc.avif" alt="">
-		<img src="images/nzxt-amd-logo.avif" alt="">
+		<img class="amd-afb" src="images/nzxt-amd-pc.avif" alt="afbeelding van een AMD pc">
+		<img src="images/nzxt-amd-logo.avif" alt="amd en nzxt colab afbeelding">
 		<h2>Player: Two | AMD <br> Gamescom Edition</h2>
 		<p>Unlock the full potential of your PC with AI-ready AMD Ryzen™ processors. Bring the speed of gaming to every
 			element of your rig with built-in AI acceleration and enhanced AI capabilities for productivity and content
 			creation.
 		</p>
-		<a class="amd-button" href="">Player: Two | AMD Gamescom Edition</a>
+		<a href="">Player: Two | AMD Gamescom Edition</a>
 	</section>
 
-	<section>
-		<img src="images/green-bg.avif" alt="">
-		<img src="images/rtx-pc.avif" alt="">
+	<section class="rtx90-pc">
 		<h2>Build With GeForce RTX™ 4090.</h2>
 		<p>The NVIDIA® GeForce RTX™ 4090 is the ultimate GeForce GPU. It brings an enormous leap in
 			performance, efficiency, and AI-powered graphics.
 		</p>
-		<button>Explore RTX™ 4090</button>
+		<a href="">Explore RTX™ 4090</a>
+		<img src="images/rtx-pc.avif" alt="afbeelding van een pc en videokaart">
 	</section>
 	<h2>What Others Say</h2>
 
 	<section>
-		<img src="images/pcgamer-logo.avif" alt="">
-		<p>“Offering real-world performance data is a great idea, and makes the process of ordering a PC much less
-			abstract for newcomers.”</p>
-		<img src="images/kotaku-logo.avif" alt="">
-		<p>“There's something lovely about having a PC that comes with a set of guaranteed predicted frames-per-second
-			targets for the games I planned.”</p>
-		<img src="images/techradar-logo.avif" alt="">
-		<p>“This is certainly a very neat idea, and the company is putting its money where its mouth is regarding the
-			frame-rate estimations.”</p>
+		<blockquote>
+			<img src="images/pcgamer-logo.avif" alt="pcgamer logo">
+			<p>“Offering real-world performance data is a great idea, and makes the process of ordering a PC much less
+				abstract for newcomers.”</p>
+		</blockquote>
+		<blockquote><img src="images/kotaku-logo.avif" alt="kotaku logo">
+			<p>“There's something lovely about having a PC that comes with a set of guaranteed predicted
+				frames-per-second
+				targets for the games I planned.”</p>
+		</blockquote>
+		<blockquote>
+			<img src="images/techradar-logo.avif" alt="techradar logo">
+			<p>“This is certainly a very neat idea, and the company is putting its money where its mouth is regarding
+				the
+				frame-rate estimations.”</p>
+		</blockquote>
 	</section>
 
 	<h2>Our Newest Releases</h2>
-	<p>Unleash the full potential of your gaming rig with NZXT's newest PC components, engineered for speed, precision,
+	<p class="new-release-woord">Unleash the full potential of your gaming rig with NZXT's newest PC components,
+		engineered for speed, precision,
 		and unmatched reliability.</p>
-	<section>
-		<img src="images/blue-bg.avif" alt="">
-		<img src="images/h5-flow-blue.avif" alt="">
+
+	<section class="h5-blauw">
+		<img src="images/h5-flow-blue.avif" alt="h5 flow afbeelding">
 		<h3>H5 Flow | H5 Flow RGB</h3>
 		<p>The H5 Flow offers top-notch airflow and powerful cooling in a compact size, which is ideal for most builds.
 		</p>
-		<button>Shop H5 Flow ></button>
+		<a href="">Shop H5 Flow &gt; <!--chatgpt gevraagd voor > icoontje --> </a>
 	</section>
 
-	<section>
-		<img src="images/pc-warm.avif" alt="">
+	<section class="warm-pc">
 		<h2>H7 Flow | H7 Flow RGB</h2>
 		<p>The latest H7 Flow reimagines GPU cooling in a classic mid-tower form factor.</p>
-		<button>Shop H7 Flow ></button>
+		<a href="">Shop H7 Flow &gt; </a>
 	</section>
 
-	<section>
-		<img src="images/icue-white.avif" alt="">
+	<section class="icue-ban">
 		<h2>RGB Core</h2>
 		<p>Available individually or as single-frame fans for a simplified clutter-free setup.</p>
-		<p>Shop RGB Core Fans ></p>
+		<a href="">Shop RGB Core Fans &gt; </a>
+		<img src="images/fansicue.png" alt="icue fans afgebeeld">
 	</section>
 
-	<section>
-		<img src="images/white-fan.avif" alt="">
+	<section class="simple-fan">
+		<img src="images/white-fan.avif" alt="witte cooling fan">
 		<h2>Quiet Airflow Fans</h2>
 		<p>The new NZXT F Series Quiet Airflow fans are optimized to move larger amounts of air while keeping things as
 			quiet as possible.</p>
-		<p>Shop Quiet Airflow Fans</p>
+		<a href="">Shop Quiet Airflow Fans &gt;</a>
 	</section>
 
-	<section>
-		<img src="images/source-yellow.avif" alt="">
+	<section class="simple-fan">
+		<img src="images/source-yellow.avif" alt="powersupply afbeelding">
 		<h2>C-Series Gold</h2>
 		<p>Gold PSUs deliver efficient power for high-performance builds with low noise.</p>
-		<p>Shop Gold PSUs</p>
+		<a href="">Shop Gold PSUs &gt; </a>
 	</section>
 
-	<section>
-		<img src="images/white-fan-fat.avif" alt="">
+	<section class="simple-fan">
+		<img src="images/white-fan-fat.avif" alt="dikke witte cooling fan">
 		<h2>Static Pressure Fans</h2>
 		<p>The new NZXT F Series Static Pressure fans are optimized to push air through crowded spaces while keeping
 			things as quiet as possible.</p>
-		<p>Shop Static Pressure Fans ></p>
+		<a href="">Shop Static Pressure Fans &gt; </a>
 	</section>
+
+	<video class="video-speler">
+		<source src="videos/FullSizeRender.mp4" type="video/mp4">
+	</video>
+	<button type="button" class="knop-video">Speel/Pauzeer</button>
 
 	<h2>Shop NZXT Bestsellers</h2>
-	<p>Join the thousands of PC gamers who have made NZXT's best-selling PC products their go-to choice for top-tier
+	<p class="new-release-woord">Join the thousands of PC gamers who have made NZXT's best-selling PC products their
+		go-to choice for top-tier
 		performance, reliability, and style.</p>
 
-	<section>
-		<p>New</p>
-		<img src="images/player-two-prime.avif" alt="">
-		<h3>Player: Two Prime</h3>
-		<p>H6 Flow RGB RTX 4070 Ti SUPER Prebuilt Gaming PC</p>
-		<p>Ships by 16.09.24</p>
-		<p>PCs Built in 2 Business Days</p>
-		<p>2 Colors</p>
-		<p>€2,199.00</p>
+	<section class="producten-twee">
+
+		<article>
+			<h3 class="new-banner">New</h3>
+			<img src="images/player-two-prime.avif" alt="afbeelding h6 flow rgb rtx4070 ti super gaming pc">
+			<h4>Player: Two Prime</h4>
+			<p>H6 Flow RGB RTX 4070 Ti SUPER Prebuilt Gaming PC</p>
+			<h5>Ships by 16.09.24</h5>
+			<h5>PCs Built in 2 Business Days</h5>
+			<p>2 Colors</p>
+			<p>€2,199.00</p>
+		</article>
+
+		<article>
+			<h3 class="new-banner">New</h3>
+			<img src="images/player-two-h6-flow.avif" alt="afbeelding h6 flow rtx4070 super gaming pc">
+			<h4>Player: Two</h4>
+			<p>H6 Flow RTX 4070 SUPER Prebuilt Gaming PC</p>
+			<h5>Ships by 16.09.24</h5>
+			<h5>PCs Built in 2 Business Days</h5>
+			<p>2 Colors</p>
+			<p>€1,699.00</p>
+		</article>
+
+		<article>
+			<h3>Promotion</h3>
+			<img src="images/player-three-h7-flow.avif" alt="afbeelding h7 flow rtx4070 ti super gaming pc">
+			<h4>Player: Three</h4>
+			<p>H7 Flow RTX 4070 Ti SUPER Prebuilt Gaming PC</p>
+			<h5>Ships by 16.09.24</h5>
+			<h5>PCs Built in 2 Business Days</h5>
+			<p>2 Colors</p>
+			<p>€2,349.00</p>
+		</article>
+
+		<article>
+			<h3>promotion</h3>
+			<img src="images/h5-flow-rtx4060.avif" alt="afbeelding h5 flow rtx 4060 gaming pc">
+			<h4>Player: One</h4>
+			<p>H5 Flow RTX 4060 Prebuilt Gaming PC</p>
+			<h5>Ships by 16.09.24</h5>
+			<h5>PCs Built in 2 Business Days</h5>
+			<p>2 Colors</p>
+			<p>€1,049.00</p>
+		</article>
+
+		<article>
+			<h3 class="new-banner">New</h3>
+			<img src="images/amd-edition-pc.avif" alt="afbeelding amd pc">
+			<h4>Player: Two | AMD Gamescom Edition</h4>
+			<p>H6 Flow RGB Radeon RX 7800 XT Gaming PC</p>
+			<h5>Ships by 16.09.24</h5>
+			<h5>PCs Built in 2 Business Days</h5>
+			<p>2 Colors</p>
+			<p>€1,799.00</p>
+		</article>
+
+		<article>
+			<img src="images/h9-flow-case.avif" alt="afbeelding h9 flow case">
+			<h4>H9 Flow</h4>
+			<p>Dual-Chamber Mid-Tower Airflow Case</p>
+			<h5>Ships by 16.09.24</h5>
+			<p>2 Colors</p>
+			<p>€189.90</p>
+		</article>
+
+		<article>
+			<img src="images/h6-flow-case.avif" alt="afbeelding h6 flow case">
+			<h4>H6 Flow RGB</h4>
+			<p>Compact Dual-chamber Mid-Tower Airflow Case with RGB Fans</p>
+			<p>Ships by 16.09.24</p>
+			<p>2 Colors</p>
+			<p>€144.99</p>
+		</article>
+
+		<article>
+			<img src="images/keyboard-white.avif" alt="afbeelding function 2 keyboard">
+			<h4>Function 2</h4>
+			<p>Full-Size Optical Gaming Keyboard</p>
+			<p>2 Colors</p>
+		</article>
+
 	</section>
 
-	<section>
-		<p>New</p>
-		<img src="images/player-two-h6-flow.avif" alt="">
-		<h3>Player: Two</h3>
-		<p>H6 Flow RTX 4070 SUPER Prebuilt Gaming PC</p>
-		<p>Ships by 16.09.24</p>
-		<p>PCs Built in 2 Business Days</p>
-		<p>2 Colors</p>
-		<p>€1,699.00</p>
-	</section>
-
-	<section>
-		<p>Promotion</p>
-		<img src="images/player-three-h7-flow.avif" alt="">
-		<h3>Player: Three</h3>
-		<p>H7 Flow RTX 4070 Ti SUPER Prebuilt Gaming PC</p>
-		<p>Ships by 16.09.24</p>
-		<p>PCs Built in 2 Business Days</p>
-		<p>2 Colors</p>
-		<p>€2,349.00</p>
-	</section>
-
-	<section>
-		<p>promotion</p>
-		<img src="images/h5-flow-rtx4060.avif" alt="">
-		<h3>Player: One</h3>
-		<p>H5 Flow RTX 4060 Prebuilt Gaming PC</p>
-		<p>Ships by 16.09.24</p>
-		<p>PCs Built in 2 Business Days</p>
-		<p>2 Colors</p>
-		<p>€1,049.00</p>
-	</section>
-
-	<section>
-		<p>New</p>
-		<img src="images/amd-edition-pc.avif" alt="">
-		<h3>Player: Two | AMD Gamescom Edition</h3>
-		<p>H6 Flow RGB Radeon RX 7800 XT Gaming PC</p>
-		<p>Ships by 16.09.24</p>
-		<p>PCs Built in 2 Business Days</p>
-		<p>2 Colors</p>
-		<p>€1,799.00</p>
-	</section>
-
-	<section>
-		<img src="images/h9-flow-case.avif" alt="">
-		<h3>H9 Flow</h3>
-		<p>Dual-Chamber Mid-Tower Airflow Case</p>
-		<p>Ships by 16.09.24</p>
-		<p>2 Colors</p>
-		<p>€189.90</p>
-	</section>
-
-	<section>
-		<img src="images/h6-flow-case.avif" alt="">
-		<h3>H6 Flow RGB</h3>
-		<p>Compact Dual-chamber Mid-Tower Airflow Case with RGB Fans</p>
-		<p>Ships by 16.09.24</p>
-		<p>2 Colors</p>
-		<p>€144.99</p>
-	</section>
-
-	<section>
-		<img src="images/keyboard-white.avif" alt="">
-		<h3>Function 2</h3>
-		<p>Full-Size Optical Gaming Keyboard</p>
-		<p>2 Colors</p>
-	</section>
-
-	<section>
-		<img src="images/components.avif" alt="">
-		<img src="images/klarna-logo.avif" alt="">
+	<section class="klarna-banner">
+		<img src="images/klarna-logo.avif" alt="klarna logo">
 		<h2>Shop With Klarna</h2>
 		<p>Buy now, and pay over time with Klarna. Klarna offers secure financing. Simply select "Klarna monthly
 			payments" upon checkout on the Payment Method page.</p>
+		<img src="images/components.avif" alt="onderdelen van een pc afgebeeld">
 	</section>
 
-	<section>
-		<img src="images/vibe-pc-bg.avif" alt="">
-		<p>NZXT</p>
+	<section class="last-banner">
+		<h3>NZXT</h3>
 		<h2>Prebuilt Power to Love</h2>
-		<p>Shop Player PCs ></p>
+		<a href="">Shop Player PCs &gt;</a>
 	</section>
 
-	<section>
-		<h2>Stay in Touch</h2>
-		<p>Stay up to date on NZXT product news and offers</p>
-		<button>Notify Me</button>
-		<p>By signing up you agree to NZXT and CAM's Privacy Policy and Terms & Conditions</p>
-		<p>language english country nederlands</p>
-		<ul>
-			<li>contact</li>
-			<li>about nzxt</li>
-			<li>community</li>
-			<li>software</li>
-			<li>account</li>
-			<li>nzxt store</li>
-		</ul>
-	</section>
+	<footer>
+		<section class="contact-maken-foot">
+			<h2>Stay in Touch</h2>
+			<h3>Stay up to date on NZXT product news and offers.</h3>
+
+			<form>
+				<label for="email"></label>
+				<input type="email" id="email" name="email" placeholder="" required>
+				<button type="submit">Notify Me</button>
+			</form>
+
+			<!-- hulp van chatgpt  -->
+
+			<input type="checkbox" required>
+			By signing up you agree to NZXT and CAM's
+			<a href="">Privacy Policy</a> and
+			<a href="">Terms
+				&amp;<!--chatgpt gevraagd voor & icoontje --> Conditions</a>
+		</section>
+
+
+		<section class="info-foot">
+			<div class="heading-container">
+				<h2>LANGUAGE</h2>
+				<h2>COUNTRY</h2>
+			</div>
+			<div class="paragraph-container">
+				<p>English v</p>
+				<p>Nederlands v</p>
+			</div>
+
+			<ul> <!-- met hulp van chatgpt -->
+				<li>
+					<select>
+						<option value="contact">Contact</option>
+						<option value="contact1">Contact Option 1</option>
+						<option value="contact2">Contact Option 2</option>
+					</select>
+				</li>
+				<li class="separator"></li> <!-- Separator tussen dropdowns -->
+				<li>
+					<select>
+						<option value="about">About NZXT</option>
+						<option value="about1">About Option 1</option>
+						<option value="about2">About Option 2</option>
+					</select>
+				</li>
+				<li class="separator"></li>
+				<li>
+					<select>
+						<option value="community">Community</option>
+						<option value="community1">Community Option 1</option>
+						<option value="community2">Community Option 2</option>
+					</select>
+				</li>
+				<li class="separator"></li>
+				<li>
+					<select>
+						<option value="software">Software</option>
+						<option value="software1">Software Option 1</option>
+						<option value="software2">Software Option 2</option>
+					</select>
+				</li>
+				<li class="separator"></li>
+				<li>
+					<select>
+						<option value="account">Account</option>
+						<option value="account1">Account Option 1</option>
+						<option value="account2">Account Option 2</option>
+					</select>
+				</li>
+				<li class="separator"></li>
+				<li>
+					<select>
+						<option value="store">NZXT Store</option>
+						<option value="store1">Store Option 1</option>
+						<option value="store2">Store Option 2</option>
+					</select>
+				</li>
+			</ul>
+
+			<img src="images/socials.png" alt="link naar socials">
+			<h4>NZXT</h4>
+			<h6>© NZXT Inc. 2024 All Rights Reserved <br>
+				Legal <br>
+				Privacy Policy <br>
+				Manage Cookie Preferences</h6>
+		</section>
+		<button type="button" class="theme-toggle">Wissel naar Dark Mode</button>
+		<button type="button" class="font-size-verander">Verander Lettergrootte</button>
+
+		<!--pop up voor het chatten, ik was genoodzaakt voor een onclick ander werkte het niet-->
+		<img class="chatten" src="icons/chat-icon.png" alt="chatten om hulp" onclick="openPopup()">
+		<div class="chat-popup" id="chatPopup">
+			<div class="popup-content">
+				<button type="button" class="close" onclick="closePopup()">Sluiten</button>
+				<h2>Chat met ons!</h2>
+				<p>Waarmee kunnen we je helpen?</p>
+				<textarea placeholder="Mijn vraag is..."></textarea>
+				<button type="button">Verzend</button>
+			</div>
+		</div>
+	</footer>
 
 	<script defer src="scripts/script.js"></script>
 </body>

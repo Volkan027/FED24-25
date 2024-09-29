@@ -19,7 +19,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   Volkan Kocak
 
   #### Je startniveau:
-  tussen blauw en rood (kies uit zwart, rood óf blauw)
+  Blauw (kies uit zwart, rood óf blauw)
 
   #### Je focus:
   surface plane (kies uit responsive óf surface plane)
@@ -41,10 +41,27 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   #### Screenshot(s) van de eerste pagina (small screen): 
   Home scherm  
   <img src="readme-images/home.png" width="375px" alt="home scherm">
+  <img src="readme-images/hs1.png" width="375px" alt="home scherm">
+  <img src="readme-images/hs2.png" width="375px" alt="home scherm">
+  <img src="readme-images/hs3.png" width="375px" alt="home scherm">
+  <img src="readme-images/hs4.png" width="375px" alt="home scherm">
+  <img src="readme-images/hs5.png" width="375px" alt="home scherm">
+  <img src="readme-images/hs6.png" width="375px" alt="home scherm">
+  <img src="readme-images/hs7.png" width="375px" alt="home scherm">
+  <img src="readme-images/hs8.png" width="375px" alt="home scherm">
+  <img src="readme-images/hs9.png" width="375px" alt="home scherm">
+  <img src="readme-images/hs10.png" width="375px" alt="home scherm">
+  <img src="readme-images/hs11.png" width="375px" alt="home scherm">
+  <img src="readme-images/hs12.png" width="375px" alt="home scherm">
+  <img src="readme-images/hs13.png" width="375px" alt="home scherm">
+  <img src="readme-images/hs14.png" width="375px" alt="home scherm">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  PC kopen  
-  <img src="readme-images/pc.png" width="375px" alt="het personaliseren van een pc">
+  Support  
+  <img src="readme-images/sup1.png" width="375px" alt="support">
+  <img src="readme-images/sup2.png" width="375px" alt="support">
+  <img src="readme-images/sup3.png" width="375px" alt="support">
+  <img src="readme-images/sup4.png" width="375px" alt="support">
  
 </details>
 
@@ -52,7 +69,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Toegankelijkheidstest 1/2 (week 1)
 
-<details>
+<details open>
   <summary>uitwerken na test in 2<sup>e</sup> werkgroep</summary>
 
   ### Bevindingen
@@ -74,17 +91,30 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Breakdownschets (week 1)
 
-<details>
+<details open>
   <summary>uitwerken na afloop 3<sup>e</sup> werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/bd1.png" width="375px" alt="breakdown van de hele pagina">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/bd2.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bd3.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bd4.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bd5.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bd6.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bd7.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bd8.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bd9.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bd10.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bd11.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bd12.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bd13.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bd14.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bd15.png" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/bd16.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -94,7 +124,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
 ## Voortgang 1 (week 2)
 
-<details>
+<details open>
   <summary>uitwerken voor 1<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
@@ -131,30 +161,32 @@ ik gewend was.
 
 ## Voortgang 2 (week 3)
 
-<details>
+<details open>
   <summary>uitwerken voor 2<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+<img src="readme-images/ssv1.png" width="375px" alt="wat ging er goed week 2">
+<img src="readme-images/ssv2.png" width="375px" alt="wat ging er goed week 2">
+dit gedeelte gaat erg moeilijk
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Volkan         | ---                | ---          | ---              |
+  | hoe zrog ik     | en dit             | en ik dit    | en dan ik dat    |
+  | ervoor dat mijn  | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | articles op hun plek blijven               | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-- ...
+  - omdat ze in een ul met li zitten, zorgt het ervoor dat ze niet mooi in het midden zitten
+  - html ziet er erg goed uit, veel verschillende banners dus classes zijn niet te ontlopen
+  - vergeet geen alt teksten neer te zetten bij je afbeeldingen
+- voor zover gaat het goed
 
 </details>
 
@@ -164,12 +196,22 @@ ik gewend was.
 
 ## Toegankelijkheidstest 2/2 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken na test in 9<sup>e</sup> werkgroep</summary>
+  <img src="readme-images/test21.png" width="375px" alt="wat ging er goed week 2">
+   <img src="readme-images/test22.png" width="375px" alt="wat ging er goed week 2">
+    <img src="readme-images/test23.png" width="375px" alt="wat ging er goed week 2">
+     <img src="readme-images/test24.png" width="375px" alt="wat ging er goed week 2">
+      <img src="readme-images/test25.png" width="375px" alt="wat ging er goed week 2">
+  
+
+
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
+- het valt mij op dat er niet heel veel verschillen zijn, wel merkte ik dat ik een video erin heb staan en daar dus wel iets
+van toepassing op mij was.
+- er is weinig verschil, de echte site doet het ene beter, en mijn site weer het andere
 </details>
 
 
@@ -178,30 +220,30 @@ ik gewend was.
 
 ## Voortgang 3 (week 4)
 
-<details>
+<details open>
   <summary>uitwerken voor 3<sup>e</sup> voortgang</summary>
 
   ### Stand van zaken
   hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
-
+<img src="readme-images/codevb.png" width="375px" alt="code">
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
   | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Volkan           | ---                | ---          | ---              |
+  | hoe zit het met divs  | en dit             | en ik dit    | en dan ik dat    |
+  | en classes want voor mij | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | is het onvermijdelijk            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
+  - mijn html ziet er goed en semantisch uit
+  - vergeet de alt tekstjes niet
+  - het gaat prima ga zo door
+  - maak custom properties van je kleuren
 
 </details>
 
@@ -211,23 +253,26 @@ ik gewend was.
 
 ## Eindgesprek (week 5)
 
-<details>
+<details open>
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
-
+  <img src="readme-images/eind2.png" width="375px" alt="uitomst opdracht 1">
+- alhoewel ik coderen erg moeilijk vind is het mij toch gelukt om de website exact na te maken, waarschijnlijk is mijn
+code verre van perfect, visueel is het mij wel gelukt
 
   ### Dit ging goed/Heb ik geleerd: 
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/eind1.png" width="375px" alt="top">
+ -De gehele site lijkt er zowat exact op en daar ben ik erg torts op, vooral op de producten gedeelte.
 
 
   ### Dit was lastig/Is niet gelukt:
   Korte omschrijving met plaatjes
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/eind3.png" width="375px" alt="bummer">
+  - ik wilde ook een specificatie pagina maken, maar die was te groot en te moeilijk voor mij :/
 </details>
 
 
@@ -243,8 +288,10 @@ ik gewend was.
   Nb. ChatGpT en andere AI horen er ook bij.
   Nb. Vermeld de bronnen ook in je code.
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://lukelowrey.com/css-variable-theme-switcher/
+  2. https://www.w3schools.com/
+  3. https://codepen.io/
+  4. https://developer.mozilla.org/
+  5. https://chatgpt.com
 
 </details>

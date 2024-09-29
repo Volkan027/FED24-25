@@ -2,33 +2,57 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="Volkan" content="jouw naam">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="Volkan" content="jouw naam">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
+    <!-- gefaalde onderdeel, ik laat het erin omdat je dan kan zien dat ik het geprobeerd heb-->
+    <title>NZXT product</title>
 
-	<title>NZXT</title>
-
-	<link href="styles/style.css" rel="stylesheet">
-	<link rel="icon" type="image/svg+xml" href="images/n-purple.png">
+    <link href="styles/style.css" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="images/n-purple.png">
 </head>
 
-<body>
+<body class="bg-product-body">
+    <p class="boventekst">All NZXT PCs are assembled with care in Germany</p>
     <header>
-		<p>All NZXT PCs are assembled with care in Germany</p>
-		<img src="images/nzxt-logo-png.png" alt="">
-		<img src="icons/hamburger-menu.png" alt="">
-		<img src="icons/vergrootglas.png" alt="">
-		<img src="icons/winkelmand.png" alt="">
-	</header>
+        <nav>
+            <div class="linker-nav">
+                <img class="hamburger" src="icons/hamburger-menu.png" onclick="hamburger()" alt="">
+                <a href="index.html">
+                    <img class="logo-web" src="images/nzxt-logo-png.png" alt="logo nzxt">
+                </a>
+            </div>
+            <div class="rechter-nav">
+                <img class="vergrootglas" src="icons/vergrootglas.png" alt="">
+                <img class="winkelmand" src="icons/winkelmand.png" alt="">
+            </div>
+        </nav>
+        <div class="topnav">
+            <div id="myLinks">
+                <a href="">Gaming PCs</a>
+                <a href="">Components</a>
+                <a href="">Gaming Gear</a>
+                <a href="">Monitors</a>
+                <a href="">Software</a>
+                <a href="">Community</a>
+                <a href="support.html"> ? Support</a>
+            </div>
+        </div>
+    </header>
 
-    <p>Player: Three Series > Player: Three Prime</p>
-    <img src="images/player-three-prime.avif" alt="">
-    <img src="images/player-three-prime-side.png" alt="">
-    <img src="images/player three prime front.png" alt="">
 
-    <p>Promotion</p>
+
+    <p class="top-zoek">Player: Three Series &gt;<!--chatgpt gevraagd voor > icoontje --> Player: Three Prime</p>
+
+    <section>
+        <img src="images/player-three-prime.avif" alt="">
+        <!--<img src="images/player-three-prime-side.png" alt=""> -->
+        <!-- <img src="images/player three prime front.png" alt=""> -->
+    </section>
+
+
     <h2>Player: Three Prime</h2>
     <p>H9 Elite RTX 4090 Prebuilt Gaming PC</p>
     <h3>€4,099.00</h3>
@@ -37,26 +61,40 @@
 
     <form>
         <fieldset>
+            <legend></legend>
             <button type="button">Player: One</button>
             <button type="button">Player: One</button>
             <button type="button">Player: One</button>
+            <button type="submit">s</button>
         </fieldset>
         <h3>Series</h3>
 
-    </section>
+        <section>
+            <button type="button">Player: Three</button>
+            <button type="button">Player: Three Prime</button>
+        </section>
 
-    <section>
-        <button>Player: Three</button>
-        <button>Player: Three Prime</button>
-    </section>
+        <h2>Configure</h2>
+        <h3>Color</h3>
+        <button type="button">White</button>
+        <button type="button">Black</button>
 
-<h2>Configure</h2>
-<h3>Color</h3>
-<button>White</button>
-<button>Black</button>
+    </form>
 
-</form>
+    <img class="chatten" src="icons/chat-icon.png" alt="chatten om hulp" onclick="openPopup()">
+
+    <!-- Pop-up structuur -->
+    <div class="chat-popup" id="chatPopup">
+        <div class="popup-content">
+            <button type="button" class="close" onclick="closePopup()">Sluiten</button>
+            <h2>Chat met ons!</h2>
+            <p>Waarmee kunnen we je helpen?</p>
+            <textarea placeholder="Mijn vraag is..."></textarea>
+            <button type="button">Verzend</button>
+        </div>
+    </div>
 
     <script defer src="scripts/script.js"></script>
 </body>
+
 </html>
